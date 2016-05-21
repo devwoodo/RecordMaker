@@ -12,7 +12,7 @@ int main(int argc, char * argv[])
 		eList.addPeople();
 
 	for (auto it : eList)
-		std::cout << it << std::endl;
+		std::cout << it.second << std::endl;
 
 
 	return 0;

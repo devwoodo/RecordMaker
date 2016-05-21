@@ -80,3 +80,23 @@ void EInfoList::addPeople()
 		newNum = randomNumber(CONST::MIN_NUMBER, CONST::MAX_NUMBER);
 	_list.insert(std::make_pair(newNum, EmployeeInform(newNum, randomNumber(CONST::MIN_SCORE, CONST::MAX_SCORE))));
 }
+
+std::unordered_map<unsigned int, EmployeeInform>::iterator EInfoList::begin()
+{
+	return _list.begin();
+}
+
+std::unordered_map<unsigned int, EmployeeInform>::iterator EInfoList::end()
+{
+	return _list.end();
+}
+
+std::unordered_map<unsigned int, EmployeeInform>::const_iterator EInfoList::cbegin()
+{
+	return _list.cbegin();
+}
+
+std::unordered_map<unsigned int, EmployeeInform>::const_iterator EInfoList::cend()
+{
+	return _list.cend();
+}

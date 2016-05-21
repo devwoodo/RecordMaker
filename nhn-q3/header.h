@@ -42,7 +42,12 @@ public:
 
 	void addPeople();
 	//void addPeople(unsigned int number, unsigned int score);	//rev
-	
+	std::unordered_map<unsigned int, EmployeeInform>::iterator begin();
+	std::unordered_map<unsigned int, EmployeeInform>::iterator end();
+	std::unordered_map<unsigned int, EmployeeInform>::const_iterator cbegin();
+	std::unordered_map<unsigned int, EmployeeInform>::const_iterator cend();
+
+
 
 public:
 private:
