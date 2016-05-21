@@ -19,9 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{1D4C6D71-45DC-4DB5-A6A1-71E4EC5C2DAB}</ProjectGuid>
+    <ProjectGuid>{A0D91DF0-D378-4B73-AA05-059D281ED2FA}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
-    <RootNamespace>nhnq3</RootNamespace>
+    <RootNamespace>RecordMaker</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -146,11 +146,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="header.h" />
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="header.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="header.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
