@@ -7,6 +7,7 @@
 #include <random>
 #include <unordered_map>
 
+// 사원 정보
 class EmployeeInform
 {
 public:
@@ -35,13 +36,13 @@ private:
 	friend std::ostream& operator<<(std::ostream& os, const EmployeeInform& ei);
 };
 
+// 사원 정보 목록
 class EInfoList
 {
 public:
 	EInfoList();
 
 	void addPeople();
-	//void addPeople(unsigned int number, unsigned int score);	//rev
 	std::unordered_map<unsigned int, EmployeeInform>::iterator begin();
 	std::unordered_map<unsigned int, EmployeeInform>::iterator end();
 	std::unordered_map<unsigned int, EmployeeInform>::const_iterator cbegin();
